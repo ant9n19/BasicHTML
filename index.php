@@ -7,7 +7,7 @@ if($connection == false){
   exit();
 }
 
-$login = $_POST['login'];
+$login = $_POST['name'];
 $password = $_POST['psswrd'];
 
 $count = mysqli_query($connection, "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password'");
